@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: candidate-service-local
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+server:
+  port: 4567
+  tomcat:
+    max-threads: 5
+
+
+
+candidate-configuration:
+  mongo-db-connection-string: mongodb://localhost:27017/CandidateDB
+  mongo-db-name: "CandidateDB"
+  mongo-collection-name: "Candidate"
